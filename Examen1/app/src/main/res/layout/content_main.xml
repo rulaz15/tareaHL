@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.raultc.examen1.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@mipmap/ic_launcher">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency Exchange"
+        android:id="@+id/textView2"
+        android:backgroundTint="#fe9c9fde"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="#040000"
+        android:background="#fcfafa" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converting from: "
+        android:id="@+id/textView"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#060606"
+        android:textSize="15sp"
+        android:background="#fe9c9fde" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converting to: "
+        android:id="@+id/textView3"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#030000"
+        android:textSize="15sp"
+        android:background="#fe9c9fde" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textFrom"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp"
+        android:textColor="#020000"
+        android:textSize="15sp"
+        android:background="#fe9c9fde" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textTo"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/textFrom"
+        android:layout_alignStart="@+id/textFrom"
+        android:textColor="#010000"
+        android:textSize="15sp"
+        android:background="#fe9c9fde" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/numField"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="97dp"
+        android:text="100"
+        android:textColor="#1cf803"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change currency"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:background="#14fb03" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:id="@+id/button2"
+        android:layout_below="@+id/numField"
+        android:layout_centerHorizontal="true"
+        android:onClick="convertFunction"
+        android:background="#14fb03" />
+</RelativeLayout>

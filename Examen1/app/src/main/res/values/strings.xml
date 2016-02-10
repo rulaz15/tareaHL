@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Examen1</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_segunda_pantalla">segundaPantalla</string>
+    <string-array name="Currencies">
+        <item>EU</item>
+        <item>USD</item>
+        <item>MX</item>
+
+    </string-array>
+</resources>
